@@ -1,0 +1,24 @@
+{
+  "name": "zangleme-nft",
+  "version": "1.0.0",
+  "description": "葬了么NFT",
+  "main": "index.js",
+  "scripts": {
+    "contract:compile": "hardhat compile",
+    "contract:deploy": "hardhat --network goerli run scripts/deploy.js",
+    "mint": "node scripts/mint-nft.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.1.1",
+    "ethers": "^5.7.1",
+    "hardhat": "^2.11.2"
+  },
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.4.6",
+    "@openzeppelin/contracts": "^4.7.3",
+    "dotenv": "^16.0.2"
+  }
+}
